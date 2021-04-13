@@ -11,4 +11,8 @@ Examples:
 """
 def single_number(nums):
     # Your code here
-
+    for i, num in nums:
+        # check if num is in rest of array 
+        count = nums.count(num)
+        if count == 1:
+            return num
